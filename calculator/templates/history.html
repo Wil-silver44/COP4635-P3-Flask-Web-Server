@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Calculation History</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wilver Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Calculation History</h1>
+    
+    <ul>
+        {% for item in history %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go back to calculator</a>
+</body>
+
+</html>

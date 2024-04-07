@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<style>
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    input {
+        margin-left: 1rem;
+    }
+</style>
+
+<head>
+    <title>Online Calulator</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wilver Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h1>Simple Calculator</h1>
+    <form method = "POST" action="/calculate">
+        <label for="expression">Enter Expression:</label><br>
+        <input type="text" id="expression" name="expression"><br>
+        <input type="submit" value="Calculate">
+    </form> 
+    
+    {% if result %}
+        <p>Provided Expression: {{ expression }}</p>
+        <br>
+        <p>Result: {{ result }}</p>
+    {% endif %}
+    {% if error %}
+        <p>Error: {{ error }}</p>
+    {% endif %}
+
+    <a href="/history">Full History</a>
+</body>
+
+</html>
