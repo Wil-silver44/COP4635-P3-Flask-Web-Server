@@ -21,8 +21,7 @@ handling errors, and creating APIs using Flask.
 
 ## Running
 
-The server runs inside of a virtual enviornment.
-To run the program, simply enter the enviornment folder, and navigate into the calculator directory. From here, you may run the command
+To run the program, navigate into the calculator directory. From here, you may run the command
 ```
 python server.py
 ```

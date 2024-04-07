@@ -66,7 +66,7 @@ def api_history():
 # Helper Functions
 
 
-# For simplicity, let's assume eval() can be used.
+# For simplicity, use eval().
 def calculate_expression(expression):
     result = eval(expression)
     return result
@@ -82,6 +82,6 @@ def save_to_history(expression, result):
 # Driver code
 if __name__ == '__main__':
    app.debug = True
-   app.run(port=60012)
+   app.run(port=60012)  # Hard coding our port number into the valid range...
 
 
